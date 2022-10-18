@@ -1,0 +1,16 @@
+.header-logo {
+  @include font(26px, 700, 1.19);
+
+    display: block;
+    font-family: "Raleway";
+    color: var(--accent-color);
+  }
+  
+  .logo {
+    margin-right: 93px;
+  
+  
+  &__part {
+  color: var(--primary-text-color);
+  }
+}

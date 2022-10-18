@@ -1,0 +1,44 @@
+.work-section {
+    padding-bottom: 94px;
+  }
+  .work-item {
+    display: flex;
+  }
+  .work-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .work-overlay-text {
+    @include font(14px, 700, 1.14);
+
+    position: absolute;
+    
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    color: var(--discription-text-color);
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item {
+    width: calc((100% - 60px) / 3);
+  }
+  .item:not(:first-child) {
+    margin-left: 30px;
+  }
+  .img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .pre-title {
+    @include font(36px, 700, 1.19);
+    
+    text-align: center;
+    margin-bottom: 50px;
+  }
