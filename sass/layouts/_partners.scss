@@ -1,5 +1,6 @@
 .partners-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -31,13 +32,31 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .container-partners {
+  container-partners {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+
+  @media screen and (min-width:480px) {
+      width:480px ;
+  }
+  @media screen and (min-width:768px) {
+     width:768px ;
+  }
+  @media screen and (min-width:1200px) {
+    width:1200px ;
+  }
+  }
+
+  /*.container-partners {
     text-align: center;
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-  }
+  }*/
   
+
+
   .icon-partners:hover svg,
   .icon-partners:focus svg {
     fill: var(--accent-color);
