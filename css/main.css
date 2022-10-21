@@ -239,8 +239,9 @@ body {
 .navigation__link--current::after {
   content: "";
   position: absolute;
-  background-color: #212121;
+  background-color: var(--accent-color);
   width: 100%;
+  height: 4px;
   bottom: -1px;
   left: 0;
   border-radius: 2px;
@@ -363,10 +364,14 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .features__item {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -514,6 +519,22 @@ body {
   color: var(--secondary-text-color);
 }
 
+.pre-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .pre-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,11 +587,19 @@ body {
 }
 
 .partners-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
-  margin-bottom: 50px;
+  line-height: 1.17;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .partners-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .svg-partners {
@@ -1101,8 +1130,8 @@ footer label {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   left: 50%;
   top: 50%;
   background: var(--discription-text-color);
@@ -1110,6 +1139,12 @@ footer label {
           transform: translate(-50%, -50%);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {
@@ -1294,11 +1329,18 @@ textarea::placeholder {
 }
 
 .accept-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.16;
   height: 24px;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .accept-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+  }
 }
 
 label {
@@ -1387,8 +1429,6 @@ label {
   display: block;
   border: none;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
   top: 10px;
   right: 15px;
   fill: rgb(33, 33, 33);
@@ -1464,20 +1504,23 @@ label {
 .mobile-nav__link--current::after {
   content: "";
   position: absolute;
-  background-color: #212121;
+  background-color: var(--accent-color);
   width: 100%;
+  height: 4px;
   bottom: -1px;
   left: 0;
   border-radius: 2px;
+  width: 139px;
 }
 
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-/*.mobile-nav__item{
-position: relative;
-}*/
+.mobile-nav__item {
+  position: relative;
+}
+
 .mobile-contacts__phone {
   font-weight: 500;
   font-size: 34px;

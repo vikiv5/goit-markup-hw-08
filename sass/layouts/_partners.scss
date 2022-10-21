@@ -6,10 +6,14 @@
     gap: 30px;
   }
   .partners-title {
-    @include font(36px, 700, 1.16);
+    @include font(28px, 700, 1.17);
     
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width:1200px){
+      @include font(36px, 700, 1.16);
+      margin-bottom: 50px;
+    }
   }
   
   .svg-partners {
