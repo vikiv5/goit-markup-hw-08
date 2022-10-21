@@ -1316,7 +1316,7 @@ label {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
