@@ -15,10 +15,14 @@
        line-height: 1.14;
        letter-spacing: 0.02em;
        color: var(--primary-text-color);
-       padding-top: 32px;
-       padding-bottom: 32px;
+       
        display: block;
        position: relative;  
+
+  
+       padding-top: 32px;
+       padding-bottom: 32px;
+       
      }
    
     &__link--current::after {
