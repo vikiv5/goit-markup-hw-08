@@ -83,10 +83,21 @@ color: #212121;
 .mobile-nav__link--current {
 color:var(--accent-color);
 }
+.mobile-nav__link--current::after{
+    content: "";
+    position: absolute;
+    background-color:#212121;
+    width:100%;
+    bottom: -1px;
+    left: 0;
+    border-radius:2px;
+  }
 .mobile-nav__item:not(:last-child){
     margin-bottom: 32px;
 }
-
+/*.mobile-nav__item{
+position: relative;
+}*/
 .mobile-contacts__phone {
     
     font-weight: 500;

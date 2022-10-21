@@ -29,9 +29,10 @@
   }
 
   .contacts {
+    margin-left:96px;
+    justify-content: center;
     @media screen and (max-width:767px) {
       display: none;
-      
     }
 
     @media screen and (min-width:1200px) {
@@ -44,8 +45,9 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    /*padding-top: 32px;
-    padding-bottom: 32px;*/
+    @media screen and (max-width:1199px){
+      margin-bottom: 10px;
+    }
 
     display: flex;
     align-items: center;
@@ -63,9 +65,12 @@
   }
   
   &__item:not(:last-child) {
+    @media  screen and (min-width:1200px){
     margin-right: 40px;
-    
   }
+  @media screen and (max-width:1199px){
+    margin-top: 21px;}
+}
   &__phone ,
   &__mail {
     margin-right: 10px;
