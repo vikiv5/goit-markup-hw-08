@@ -98,8 +98,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
 }
 .footer-social {
   width: 44px;
@@ -127,13 +127,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--discription-text-color);
-  /*margin-bottom: 20px;*/
+  margin-bottom: 20px;
 }
 .mail-input {
   display: block;
   width: 100%;
   max-width: 450px;
-  margin: 20px 0;
   padding-left: 15px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -143,6 +142,10 @@
   background-color: var(--background-color-dark);
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (min-width:1200px) {
     margin-right:12px;
@@ -150,7 +153,13 @@
     width:358px;
 }
 }
+.mail-box {
+  @media screen and (max-width:1199px) {
+    display: block;
+    justify-content: center;
 
+  }
+}
 .mail-box input {
   border: none;
   outline: none;
@@ -164,6 +173,7 @@
   font-size: 16px;
   line-height: 1.25;
   color:var(--discription-text-color);
+ 
 }
 
 
@@ -181,7 +191,8 @@
   border: 1px solid var(--accent-color);
 }
 .footer-form {
-
+@media screen and (max-width:767px){
+  margin-top:60px ;}
   @media  screen and (min-width:1200px) {
     margin-left: 93px;
     text-align: start;
@@ -211,6 +222,9 @@ footer label {
   
   border: none;
   display: inline-flex;
+  @media screen and (max-width:1199px){
+    margin-top: 20px;
+  }
 
   @media screen and (min-width:1200px){
     margin-left: 0;

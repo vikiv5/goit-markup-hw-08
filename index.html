@@ -197,8 +197,8 @@
               <div class="work-overlay">
                 <picture>
                   <source srcset="
-                  ./img/in/box1-desktop-1x.jpg ,
-                  ./img/in/box1-desktop-2x.jpg"
+                  ./img/in/box1-desktop-1x.jpg 1x ,
+                  ./img/in/box1-desktop-2x.jpg 2x"
                   media="(min-width:1200px)"
                   />
                 <img
@@ -216,8 +216,8 @@
               <div class="work-overlay">
                 <picture>
                   <source srcset="
-                  ./img/in/box2-desktop-1x.jpg ,
-                  ./img/in/box2-desktop-2x.jpg"
+                  ./img/in/box2-desktop-1x.jpg 1x,
+                  ./img/in/box2-desktop-2x.jpg 2x"
                   media="(min-width:1200px)"
                   />
                 <img
@@ -234,8 +234,8 @@
               <div class="work-overlay">
                 <picture>
                   <source srcset="
-                  ./img/in/box3-desktop-1x.jpg ,
-                  ./img/in/box3-desktop-2x.jpg"
+                  ./img/in/box3-desktop-1x.jpg 1x,
+                  ./img/in/box3-desktop-2x.jpg 2x"
                   media="(min-width:1200px)"
                   />
                 <img
@@ -598,7 +598,7 @@
         </div>
       </section>
       <section class="partners section">
-        <div class="container-partners">
+        <div class="container-partners container">
           <h2 class="partners-title">Постійні клієнти</h2>
           <ul class="partners-list list">
             <li class="partners-item">
@@ -742,14 +742,13 @@
           <p class="mail-title">Підпишіться на розсилку</p>
         <form class="mail-form">
           <div class="mail-box">
-            <label
-              ><input
+            <input
                 class="mail-input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required
-            /></label>
+            />
             <button type="submit" class="btn-footer button">
               Підписатися
               <svg
