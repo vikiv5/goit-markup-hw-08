@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    @media screen and (max-width:479px){
+      gap:10px;
+    }
   }
   .partners-title {
     @include font(28px, 700, 1.17);
@@ -51,15 +54,6 @@
     width:1200px ;
   }
   }
-
-  /*.container-partners {
-    text-align: center;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }*/
-  
-
 
   .icon-partners:hover svg,
   .icon-partners:focus svg {
