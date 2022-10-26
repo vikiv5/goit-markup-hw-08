@@ -629,6 +629,12 @@ body {
           align-items: center;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .partners-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .partners-item {
@@ -642,7 +648,7 @@ body {
         flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .partners-item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
