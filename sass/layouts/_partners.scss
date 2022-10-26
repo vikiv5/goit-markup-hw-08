@@ -4,10 +4,19 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    @media screen and (max-width:479px){
-      gap:10px;
-    }
+    
   }
+  .partners-item{
+    @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px)/2);
+  }
+  @media screen and (min-width:768px) and (max-width:1199px){
+    flex-basis: calc((100% - 60px)/3);
+  }
+  @media screen and (min-width:768px) and (min-width:1200px){
+    flex-basis: calc((100% - 90px)/4);
+  }
+}
   .partners-title {
     @include font(28px, 700, 1.17);
     
@@ -27,7 +36,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    width: 170px;
+    
     height: 92px;
     border-radius: 4px;
     fill: #afb1b8;
